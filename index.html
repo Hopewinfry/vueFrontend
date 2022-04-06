@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Stuednt RegIstration</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Student Registration Portal</a>
+        </div>
+      </nav>
+
+    <div id="app">
+        <div class="forms">
+            <form id="student-form" method="">
+                <h3 class="heading">STUDENTS REGISTRATION</h3>
+                <div class="mb-3">
+                  <label for="exampleInputfirstName" class="form-label">FIRST NAME</label>
+                  <input v-model="student.firstName" type="text" class="form-control" id="exampleInputfirstName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputlastName" class="form-label">LAST NAME</label>
+                    <input v-model="student.lastName" type="text" class="form-control" id="exampleInputlastName">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputphoneNumber" class="form-label">PHONE NUMBER</label>
+                  <input v-model="student.phoneName" type="number" class="form-control" id="exampleInputphoneNumber">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">EMAIL</label>
+                    <input v-model="student.Email" type="email" class="form-control" id="exampleInputEmail">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <button @click="registerStudent" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            
+        </div>
+    
+        <div>
+            <h3 class="heading">REGISTED STUDENTS</h3>
+            <table class="table" id="student-table">
+                <thead>
+                  <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>lulu</td>
+                    <td>blue</td>
+                    <td>0784939080</td>
+                    <td>lulu@gmail.com</td>
+                    <td>
+                      <button type="submit" class="btn btn-primary">Edit</button>
+
+                      <button type="submit" class="btn btn-danger">Delete</button>
+                    </td>
+                   
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <script src="vue.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>

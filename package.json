@@ -1,0 +1,23 @@
+{
+  "name": "vuefrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenyonyozi/vueFrontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenyonyozi/vueFrontend/issues"
+  },
+  "homepage": "https://github.com/kenyonyozi/vueFrontend#readme"
+}
